@@ -8,7 +8,7 @@
             <GmapMarker
                 v-if="currentDisplay==='activity'"
                 v-for="(item, index) in allActivity"
-                :key="item.id"
+                :key="'activity_'+item.id"
                 :position="{lat:item.geojson[0][1], lng:item.geojson[0][0]}"
                 :clickable="true"
                 :draggable="false"
@@ -19,7 +19,7 @@
              <GmapMarker
                 v-else
                 v-for="(item, index) in allReport"
-                :key="item.id"
+                :key="'report_'+item.id"
                 :position="{lat:item.geojson[0][1], lng:item.geojson[0][0]}"
                 :clickable="true"
                 :draggable="false"
@@ -55,7 +55,7 @@
                 <li v-if="currentDisplay==='activity'" 
                     class="allBeachItem" 
                     v-for="(item, index) in allActivity" 
-                    :key="item.id"
+                    :key="'activityList_'+item.id"
                     @click="openInfoWindow(item)">
                     <div class="icon"><img :src="`./src/assets/GoogleMarkers/yellow_Marker${capital[index]}.png`"></div>
                     <div class="info">
@@ -66,7 +66,7 @@
                 <li v-if="currentDisplay === 'report'" 
                     class="allBeachItem" 
                     v-for="(item, index) in allReport" 
-                    :key="item.id"
+                    :key="'reportList_'+item.id"
                     @click="openInfoWindow(item)">
                     <div class="icon"><img :src="`./src/assets/GoogleMarkers/green_Marker${capital[index]}.png`"></div>
                     <div class="info">
@@ -87,7 +87,7 @@ export default {
       ],
       icon: '<i class="fas fa-angle-left fa-2x"></i>',
       sideOpen: false,
-      center: { lat: 23, lng: 121 },
+      center: { lat: 23.5, lng: 121 },
       zoom: 7,
       infoWindowPos: { lat: 23.5, lng: 121 },
       infoWinOpen: false,

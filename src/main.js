@@ -14,7 +14,7 @@ const router = new VueRouter({
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'API_Key',
+    key: 'AIzaSyC99JAR_cU3HnrKhWKpjSkRk1y6cuQqP-Q',
     libraries: 'places', // This is required if you use the Autocomplete plugin
     // OR: libraries: 'places,drawing'
     // OR: libraries: 'places,drawing,visualization'

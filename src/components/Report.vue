@@ -1,5 +1,11 @@
 <template>
   <div class="container-fluid report">
+      <div class="shadow" :class="{open:loading}">
+          <div class="shadowTable">
+            <p><i class="fas fa-spinner fa-pulse fa-5x"></i></p>
+            <p>上傳中...</p> 
+          </div>
+      </div>
       <GmapMap
         :center="center"
         :zoom="zoom"
@@ -58,12 +64,14 @@
             </div>
             <div class='previewTable'>
                 <img v-if="image!==''" class="previewArea" :src="image" />
+                <button @click="submitReport">送出回報</button>
             </div>
         </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -95,8 +103,11 @@ export default {
           height: -35
         }
       },
-      image:'',
-    };
+      image: "",
+      file: "",
+      loading:false,
+
+    }
   },
   watch: {
     reportBeach() {
@@ -136,17 +147,58 @@ export default {
     choosePic(event) {
       let files = event.target.files || event.dataTransfer.files;
       if (!files.length) return;
+      this.file = files[0];
       this.createImage(files[0]);
     },
     createImage(file) {
       let image = new Image();
       let reader = new FileReader();
       let vm = this;
-      reader.onload = (event) => {
+      reader.onload = event => {
         vm.image = event.target.result;
       };
       reader.readAsDataURL(file);
     },
+    submitReport() {
+      if (this.reportLocation === "") {
+        window.alert("請選擇回報海灘！");
+      } else if (this.image === "") {
+        window.alert("請選擇上傳照片！");
+      } else if (this.file.size > 10485760) {
+        window.alert('請重新選擇小於10MB的上傳照片！');
+      } else {
+        this.loading = true;
+        console.log(this.file);
+        let form = new FormData();
+        form.append("image", this.file);
+        let settings = {
+          async: true,
+          crossDomain: true,
+          album: "CVbLU",
+          url: "https://api.imgur.com/3/image",
+          method: "POST",
+          headers: {
+            Authorization: "Client-ID 11fea8a380dfefb"
+          },
+          processData: false,
+          contentType: false,
+          mimeType: "multipart/form-data",
+          data: form
+        };
+        axios(settings)
+          .then(res => {
+            if(res.status === 200) {
+              console.log(res);
+              this.loading = false;
+              window.alert(`圖片網址: ${res.data.data.link}`)
+            }
+          })
+          .catch(err => {
+            console.log(err);
+            this.loading = false;
+          });
+      }
+    }
   },
   computed: {
     allBeach() {
@@ -175,8 +227,42 @@ export default {
 <style scoped>
 .report {
   height: 600px;
+  position: relative;
 }
 
+.shadow {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow.open {
+  display: flex;
+}
+
+.shadowTable{
+  border-radius:10px; 
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.shadowTable p{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
 
 .reportSelector p {
   padding: 5px 0;
@@ -192,13 +278,26 @@ export default {
 
 .previewTable {
   margin-top: 10px;
-  width: 125px;
+  width: 100%;
+  height: 100px;
+  position: relative;
 }
 
 .previewArea {
-  border: 1px solid black;
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+}
+
+.previewTable button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: #ffffff;
+  padding: 5px 15px;
+  color: #666666;
 }
 </style>

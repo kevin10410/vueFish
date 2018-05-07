@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 35);
+/******/ 	return __webpack_require__(__webpack_require__.s = 36);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -179,7 +179,7 @@ module.exports = function normalizeComponent (
 "use strict";
 
 
-var bind = __webpack_require__(28);
+var bind = __webpack_require__(29);
 var isBuffer = __webpack_require__(86);
 
 /*global toString:true*/
@@ -768,7 +768,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(41)
+var listToStyles = __webpack_require__(42)
 
 /*
 type StyleObject = {
@@ -1396,10 +1396,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(29);
+    adapter = __webpack_require__(30);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(29);
+    adapter = __webpack_require__(30);
   }
   return adapter;
 }
@@ -12413,7 +12413,7 @@ Vue.compile = compileToFunctions;
 
 /* harmony default export */ __webpack_exports__["a"] = (Vue);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7), __webpack_require__(36).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7), __webpack_require__(37).setImmediate))
 
 /***/ }),
 /* 13 */
@@ -12611,8 +12611,8 @@ process.umask = function() { return 0; };
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Home_vue__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Banner_vue__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Footer_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Banner_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Footer_vue__ = __webpack_require__(54);
 //
 //
 //
@@ -12640,9 +12640,9 @@ process.umask = function() { return 0; };
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(16);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9692c2ce_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9692c2ce_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(49);
 function injectStyle (ssrContext) {
-  __webpack_require__(42)
+  __webpack_require__(43)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -12675,7 +12675,7 @@ var Component = normalizeComponent(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__GoogleMap_vue__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__GoogleMap_vue__ = __webpack_require__(45);
 //
 //
 //
@@ -12803,7 +12803,7 @@ var Component = normalizeComponent(
       capital: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"],
       icon: '<i class="fas fa-angle-left fa-2x"></i>',
       sideOpen: false,
-      center: { lat: 23, lng: 121 },
+      center: { lat: 23.5, lng: 121 },
       zoom: 7,
       infoWindowPos: { lat: 23.5, lng: 121 },
       infoWinOpen: false,
@@ -13005,7 +13005,7 @@ exports.default = {
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(65)));
+/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(66)));
 
 /***/ }),
 /* 22 */
@@ -13023,7 +13023,7 @@ exports.default = {
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(70)));
+/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(71)));
 
 /***/ }),
 /* 23 */
@@ -13100,7 +13100,7 @@ function TwoWayBindingWrapper(fn) {
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(75)));
+/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(76)));
 
 /***/ }),
 /* 25 */
@@ -13267,10 +13267,16 @@ exports.default = function (input) {
 //
 //
 
-/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(80)));
+/* harmony default export */ __webpack_exports__["a"] = ((x => x.default || x)(__webpack_require__(81)));
 
 /***/ }),
 /* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(85);
+
+/***/ }),
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13288,7 +13294,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13299,7 +13305,7 @@ var settle = __webpack_require__(89);
 var buildURL = __webpack_require__(91);
 var parseHeaders = __webpack_require__(92);
 var isURLSameOrigin = __webpack_require__(93);
-var createError = __webpack_require__(30);
+var createError = __webpack_require__(31);
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(94);
 
 module.exports = function xhrAdapter(config) {
@@ -13475,7 +13481,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13500,7 +13506,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13512,7 +13518,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13538,7 +13544,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13550,10 +13556,12 @@ module.exports = Cancel;
 /* harmony default export */ __webpack_exports__["a"] = ({});
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 //
 //
 //
@@ -13619,6 +13627,14 @@ module.exports = Cancel;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
@@ -13636,7 +13652,10 @@ module.exports = Cancel;
           height: -35
         }
       },
-      image: ''
+      image: "",
+      file: "",
+      loading: false
+
     };
   },
 
@@ -13678,6 +13697,7 @@ module.exports = Cancel;
     choosePic: function choosePic(event) {
       var files = event.target.files || event.dataTransfer.files;
       if (!files.length) return;
+      this.file = files[0];
       this.createImage(files[0]);
     },
     createImage: function createImage(file) {
@@ -13688,6 +13708,46 @@ module.exports = Cancel;
         vm.image = event.target.result;
       };
       reader.readAsDataURL(file);
+    },
+    submitReport: function submitReport() {
+      var _this = this;
+
+      if (this.reportLocation === "") {
+        window.alert("請選擇回報海灘！");
+      } else if (this.image === "") {
+        window.alert("請選擇上傳照片！");
+      } else if (this.file.size > 10485760) {
+        window.alert('請重新選擇小於10MB的上傳照片！');
+      } else {
+        this.loading = true;
+        console.log(this.file);
+        var form = new FormData();
+        form.append("image", this.file);
+        var settings = {
+          async: true,
+          crossDomain: true,
+          album: "CVbLU",
+          url: "https://api.imgur.com/3/image",
+          method: "POST",
+          headers: {
+            Authorization: "Client-ID 11fea8a380dfefb"
+          },
+          processData: false,
+          contentType: false,
+          mimeType: "multipart/form-data",
+          data: form
+        };
+        __WEBPACK_IMPORTED_MODULE_0_axios___default()(settings).then(function (res) {
+          if (res.status === 200) {
+            console.log(res);
+            _this.loading = false;
+            window.alert("\u5716\u7247\u7DB2\u5740: " + res.data.data.link);
+          }
+        }).catch(function (err) {
+          console.log(err);
+          _this.loading = false;
+        });
+      }
     }
   },
   computed: {
@@ -13714,16 +13774,16 @@ module.exports = Cancel;
 });
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue2_google_maps___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue2_google_maps__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_store_js__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__store_store_js__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_router__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__router_router_js__ = __webpack_require__(104);
 
@@ -13774,7 +13834,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 });
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -13830,7 +13890,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(37);
+__webpack_require__(38);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -13844,7 +13904,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -14037,15 +14097,15 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(13)))
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(14);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_305cb9ed_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_305cb9ed_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(58);
 function injectStyle (ssrContext) {
-  __webpack_require__(39)
+  __webpack_require__(40)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -14074,20 +14134,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(40);
+var content = __webpack_require__(41);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(4)("3a5b01b1", content, true, {});
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -14101,7 +14161,7 @@ exports.push([module.i, "body{font-family:sans-serif}p{margin:0}", ""]);
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 /**
@@ -14134,20 +14194,20 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(43);
+var content = __webpack_require__(44);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(4)("bdb9d264", content, true, {});
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -14161,15 +14221,15 @@ exports.push([module.i, ".displaySelector[data-v-9692c2ce]{padding:12px 0}select
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_GoogleMap_vue__ = __webpack_require__(17);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5a5aeb5c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a10997ee_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__ = __webpack_require__(48);
 function injectStyle (ssrContext) {
-  __webpack_require__(45)
+  __webpack_require__(46)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -14182,12 +14242,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-5a5aeb5c"
+var __vue_scopeId__ = "data-v-a10997ee"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_GoogleMap_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5a5aeb5c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_a10997ee_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -14198,20 +14258,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(46);
+var content = __webpack_require__(47);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("46ee0d24", content, true, {});
+var update = __webpack_require__(4)("efb7b1d0", content, true, {});
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -14219,27 +14279,17 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, ".googleMapBox[data-v-5a5aeb5c]{height:550px;position:relative;overflow:hidden}.sideTable[data-v-5a5aeb5c]{width:275px;height:550px;position:absolute;background:#fff;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;top:0;left:100%;transform:translateX(0);padding:0;transition:transform .2s linear}.sideTable.open[data-v-5a5aeb5c]{transform:translateX(-100%);transition:transform .2s linear}.switcher[data-v-5a5aeb5c]{padding:0 12px;position:absolute;top:-2px;left:-42px;margin:0;border-radius:5px 0 0 5px;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;background:#fff}.allBeachList[data-v-5a5aeb5c]{height:400px;padding:0;list-style:none;overflow-y:scroll}.allBeachItem[data-v-5a5aeb5c]{height:50px;background:#eee;display:flex}.allBeachItem[data-v-5a5aeb5c]:nth-child(2n+2){background:#fff}.icon[data-v-5a5aeb5c]{display:flex;width:40px}.icon img[data-v-5a5aeb5c]{object-fit:contain;margin:0 auto}.infoDetail[data-v-5a5aeb5c]{margin-bottom:2px;font-size:.9rem}.infoDetail span[data-v-5a5aeb5c]{display:inline-block;font-weight:700;width:70px}.beachTitle[data-v-5a5aeb5c]{margin:0 0 2px;font-size:1.1rem;font-weight:700}.reportPic[data-v-5a5aeb5c]{width:100px;height:100px;object-fit:cover}.info[data-v-5a5aeb5c]{font-size:.9rem;display:flex;flex-direction:column;justify-content:center}", ""]);
+exports.push([module.i, ".googleMapBox[data-v-a10997ee]{height:550px;position:relative;overflow:hidden}.sideTable[data-v-a10997ee]{width:275px;height:550px;position:absolute;background:#fff;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;top:0;left:100%;transform:translateX(0);padding:0;transition:transform .2s linear}.sideTable.open[data-v-a10997ee]{transform:translateX(-100%);transition:transform .2s linear}.switcher[data-v-a10997ee]{padding:0 12px;position:absolute;top:-2px;left:-42px;margin:0;border-radius:5px 0 0 5px;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;background:#fff}.allBeachList[data-v-a10997ee]{height:400px;padding:0;list-style:none;overflow-y:scroll}.allBeachItem[data-v-a10997ee]{height:50px;background:#eee;display:flex}.allBeachItem[data-v-a10997ee]:nth-child(2n+2){background:#fff}.icon[data-v-a10997ee]{display:flex;width:40px}.icon img[data-v-a10997ee]{object-fit:contain;margin:0 auto}.infoDetail[data-v-a10997ee]{margin-bottom:2px;font-size:.9rem}.infoDetail span[data-v-a10997ee]{display:inline-block;font-weight:700;width:70px}.beachTitle[data-v-a10997ee]{margin:0 0 2px;font-size:1.1rem;font-weight:700}.reportPic[data-v-a10997ee]{width:100px;height:100px;object-fit:cover}.info[data-v-a10997ee]{font-size:.9rem;display:flex;flex-direction:column;justify-content:center}", ""]);
 
 // exports
 
-
-/***/ }),
-/* 47 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"googleMapBox"},[_c('GmapMap',{staticStyle:{"width":"100%","height":"550px"},attrs:{"center":_vm.center,"zoom":_vm.zoom,"options":{disableDefaultUI:true}}},[_vm._l((_vm.allActivity),function(item,index){return (_vm.currentDisplay==='activity')?_c('GmapMarker',{key:item.id,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}}):_vm._l((_vm.allReport),function(item,index){return _c('GmapMarker',{key:item.id,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/green_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}})})}),_vm._v(" "),(_vm.infoWinOpen && _vm.currentDisplay==='activity')?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.selectBeach.geojson[0][1], lng:_vm.selectBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('div',{staticClass:"infoWindow"},[_c('p',{staticClass:"beachTitle"},[_vm._v(_vm._s(_vm.selectBeach.activity))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("海灘名稱:")]),_vm._v(_vm._s(_vm.selectBeach.beachName))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("活動日期:")]),_vm._v(_vm._s(_vm.selectBeach.activityDate))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("聯絡人:")]),_vm._v(_vm._s(JSON.parse(_vm.selectBeach.contact).name))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("聯絡電話:")]),_vm._v(_vm._s(JSON.parse(_vm.selectBeach.contact).phone))])])]):_vm._e(),_vm._v(" "),(_vm.infoWinOpen && _vm.currentDisplay==='report')?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.selectBeach.geojson[0][1], lng:_vm.selectBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('div',{staticClass:"infoWindow"},[_c('p',{staticClass:"beachTitle"},[_vm._v(_vm._s(_vm.selectBeach.beachName))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("海灘分段:")]),_vm._v(_vm._s(_vm.selectBeach.title))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("回報日期:")]),_vm._v(_vm._s(_vm.selectBeach.updateDate))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("淨灘需求:")]),_vm._v(_vm._s(_vm.cleanRequire))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("回報照片:")]),_vm._v(" "),_c('img',{staticClass:"reportPic",attrs:{"src":_vm.selectBeach.imageURL}})])])]):_vm._e()],2),_vm._v(" "),_c('div',{staticClass:"sideTable",class:{open:_vm.sideOpen}},[_c('p',{staticClass:"switcher open",domProps:{"innerHTML":_vm._s(_vm.icon)},on:{"click":function($event){$event.stopPropagation();return _vm.openTable($event)}}}),_vm._v(" "),_c('ul',{staticClass:"allBeachList"},[_vm._l((_vm.allActivity),function(item,index){return (_vm.currentDisplay==='activity')?_c('li',{key:item.id,staticClass:"allBeachItem",on:{"click":function($event){_vm.openInfoWindow(item)}}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}})]),_vm._v(" "),_c('div',{staticClass:"info"},[_c('p',[_vm._v("活動日期: "+_vm._s(item.activityDate))]),_vm._v(" "),_c('p',[_vm._v("淨灘活動: "+_vm._s(item.activity))])])]):_vm._e()}),_vm._v(" "),_vm._l((_vm.allReport),function(item,index){return (_vm.currentDisplay === 'report')?_c('li',{key:item.id,staticClass:"allBeachItem",on:{"click":function($event){_vm.openInfoWindow(item)}}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":("./src/assets/GoogleMarkers/green_Marker" + (_vm.capital[index]) + ".png")}})]),_vm._v(" "),_c('div',{staticClass:"info"},[_c('p',[_vm._v("更新日期: "+_vm._s(item.updateDate))]),_vm._v(" "),_c('p',[_vm._v("回報地點: "+_vm._s(item.beachName))])])]):_vm._e()})],2)])],1)}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
 /* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-fluid"},[_c('div',{staticClass:"displaySelector"},[_c('label',[_vm._v("目前顯示:")]),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.display),expression:"display"}],attrs:{"id":"displayFilter"},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.display=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.changeDisplay]}},[_c('option',{attrs:{"value":"activity","selected":""}},[_vm._v("近期活動")]),_vm._v(" "),_c('option',{attrs:{"value":"report"}},[_vm._v("累積回報")])])]),_vm._v(" "),_c('app-google-map')],1)}
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"googleMapBox"},[_c('GmapMap',{staticStyle:{"width":"100%","height":"550px"},attrs:{"center":_vm.center,"zoom":_vm.zoom,"options":{disableDefaultUI:true}}},[_vm._l((_vm.allActivity),function(item,index){return (_vm.currentDisplay==='activity')?_c('GmapMarker',{key:'activity_'+item.id,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}}):_vm._l((_vm.allReport),function(item,index){return _c('GmapMarker',{key:'report_'+item.id,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/green_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}})})}),_vm._v(" "),(_vm.infoWinOpen && _vm.currentDisplay==='activity')?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.selectBeach.geojson[0][1], lng:_vm.selectBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('div',{staticClass:"infoWindow"},[_c('p',{staticClass:"beachTitle"},[_vm._v(_vm._s(_vm.selectBeach.activity))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("海灘名稱:")]),_vm._v(_vm._s(_vm.selectBeach.beachName))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("活動日期:")]),_vm._v(_vm._s(_vm.selectBeach.activityDate))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("聯絡人:")]),_vm._v(_vm._s(JSON.parse(_vm.selectBeach.contact).name))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("聯絡電話:")]),_vm._v(_vm._s(JSON.parse(_vm.selectBeach.contact).phone))])])]):_vm._e(),_vm._v(" "),(_vm.infoWinOpen && _vm.currentDisplay==='report')?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.selectBeach.geojson[0][1], lng:_vm.selectBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('div',{staticClass:"infoWindow"},[_c('p',{staticClass:"beachTitle"},[_vm._v(_vm._s(_vm.selectBeach.beachName))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("海灘分段:")]),_vm._v(_vm._s(_vm.selectBeach.title))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("回報日期:")]),_vm._v(_vm._s(_vm.selectBeach.updateDate))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("淨灘需求:")]),_vm._v(_vm._s(_vm.cleanRequire))]),_vm._v(" "),_c('p',{staticClass:"infoDetail"},[_c('span',[_vm._v("回報照片:")]),_vm._v(" "),_c('img',{staticClass:"reportPic",attrs:{"src":_vm.selectBeach.imageURL}})])])]):_vm._e()],2),_vm._v(" "),_c('div',{staticClass:"sideTable",class:{open:_vm.sideOpen}},[_c('p',{staticClass:"switcher open",domProps:{"innerHTML":_vm._s(_vm.icon)},on:{"click":function($event){$event.stopPropagation();return _vm.openTable($event)}}}),_vm._v(" "),_c('ul',{staticClass:"allBeachList"},[_vm._l((_vm.allActivity),function(item,index){return (_vm.currentDisplay==='activity')?_c('li',{key:'activityList_'+item.id,staticClass:"allBeachItem",on:{"click":function($event){_vm.openInfoWindow(item)}}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}})]),_vm._v(" "),_c('div',{staticClass:"info"},[_c('p',[_vm._v("活動日期: "+_vm._s(item.activityDate))]),_vm._v(" "),_c('p',[_vm._v("淨灘活動: "+_vm._s(item.activity))])])]):_vm._e()}),_vm._v(" "),_vm._l((_vm.allReport),function(item,index){return (_vm.currentDisplay === 'report')?_c('li',{key:'reportList_'+item.id,staticClass:"allBeachItem",on:{"click":function($event){_vm.openInfoWindow(item)}}},[_c('div',{staticClass:"icon"},[_c('img',{attrs:{"src":("./src/assets/GoogleMarkers/green_Marker" + (_vm.capital[index]) + ".png")}})]),_vm._v(" "),_c('div',{staticClass:"info"},[_c('p',[_vm._v("更新日期: "+_vm._s(item.updateDate))]),_vm._v(" "),_c('p',[_vm._v("回報地點: "+_vm._s(item.beachName))])])]):_vm._e()})],2)])],1)}
 var staticRenderFns = []
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -14249,11 +14299,21 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-fluid"},[_c('div',{staticClass:"displaySelector"},[_c('label',[_vm._v("目前顯示:")]),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.display),expression:"display"}],attrs:{"id":"displayFilter"},on:{"change":[function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.display=$event.target.multiple ? $$selectedVal : $$selectedVal[0]},_vm.changeDisplay]}},[_c('option',{attrs:{"value":"activity","selected":""}},[_vm._v("近期活動")]),_vm._v(" "),_c('option',{attrs:{"value":"report"}},[_vm._v("累積回報")])])]),_vm._v(" "),_c('app-google-map')],1)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+
+/***/ }),
+/* 50 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Banner_vue__ = __webpack_require__(18);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_17c2957e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Banner_vue__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_17c2957e_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Banner_vue__ = __webpack_require__(53);
 function injectStyle (ssrContext) {
-  __webpack_require__(50)
+  __webpack_require__(51)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -14282,20 +14342,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(52);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(4)("1804c460", content, true, {});
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -14309,7 +14369,7 @@ exports.push([module.i, "header[data-v-17c2957e]{background:#f8f9fa}.banner[data
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14319,15 +14379,15 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Footer_vue__ = __webpack_require__(19);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c19e428_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footer_vue__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_79f42980_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footer_vue__ = __webpack_require__(57);
 function injectStyle (ssrContext) {
-  __webpack_require__(54)
+  __webpack_require__(55)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -14345,7 +14405,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Footer_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_0c19e428_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footer_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_79f42980_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Footer_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -14356,20 +14416,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(55);
+var content = __webpack_require__(56);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("435b8e30", content, true, {});
+var update = __webpack_require__(4)("d1adf59e", content, true, {});
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -14377,13 +14437,13 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "footer{margin-top:30px;background-color:#ccc;text-align:center;padding:50px 0}", ""]);
+exports.push([module.i, "footer{margin-top:30px;background-color:#ccc;text-align:center;padding:25px 0}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14393,7 +14453,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14403,7 +14463,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14424,43 +14484,43 @@ exports.gmapApi = gmapApi;
 
 var _manager = __webpack_require__(5);
 
-var _marker = __webpack_require__(59);
+var _marker = __webpack_require__(60);
 
 var _marker2 = _interopRequireDefault(_marker);
 
-var _polyline = __webpack_require__(60);
+var _polyline = __webpack_require__(61);
 
 var _polyline2 = _interopRequireDefault(_polyline);
 
-var _polygon = __webpack_require__(61);
+var _polygon = __webpack_require__(62);
 
 var _polygon2 = _interopRequireDefault(_polygon);
 
-var _circle = __webpack_require__(62);
+var _circle = __webpack_require__(63);
 
 var _circle2 = _interopRequireDefault(_circle);
 
-var _rectangle = __webpack_require__(63);
+var _rectangle = __webpack_require__(64);
 
 var _rectangle2 = _interopRequireDefault(_rectangle);
 
-var _infoWindow = __webpack_require__(64);
+var _infoWindow = __webpack_require__(65);
 
 var _infoWindow2 = _interopRequireDefault(_infoWindow);
 
-var _map = __webpack_require__(67);
+var _map = __webpack_require__(68);
 
 var _map2 = _interopRequireDefault(_map);
 
-var _streetViewPanorama = __webpack_require__(72);
+var _streetViewPanorama = __webpack_require__(73);
 
 var _streetViewPanorama2 = _interopRequireDefault(_streetViewPanorama);
 
-var _placeInput = __webpack_require__(77);
+var _placeInput = __webpack_require__(78);
 
 var _placeInput2 = _interopRequireDefault(_placeInput);
 
-var _autocomplete = __webpack_require__(79);
+var _autocomplete = __webpack_require__(80);
 
 var _autocomplete2 = _interopRequireDefault(_autocomplete);
 
@@ -14548,7 +14608,7 @@ function gmapApi() {
 }
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14692,7 +14752,7 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14785,7 +14845,7 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14928,7 +14988,7 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14980,7 +15040,7 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15027,14 +15087,14 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_vue_loader_lib_selector_type_script_index_0_infoWindow_vue__ = __webpack_require__(21);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_281fc8ce_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_281fc8ce_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_infoWindow_vue__ = __webpack_require__(67);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -15062,7 +15122,7 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15162,7 +15222,7 @@ exports.default = (0, _mapElementFactory2.default)({
 });
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15172,16 +15232,16 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_vue_loader_lib_selector_type_script_index_0_map_vue__ = __webpack_require__(22);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_f17a2f3a_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_map_vue__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_f17a2f3a_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_map_vue__ = __webpack_require__(72);
 function injectStyle (ssrContext) {
-  __webpack_require__(68)
+  __webpack_require__(69)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -15210,20 +15270,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(69);
+var content = __webpack_require__(70);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(4)("63222ddf", content, true, {});
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -15237,7 +15297,7 @@ exports.push([module.i, ".vue-map-container{position:relative}.vue-map-container
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15430,7 +15490,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15440,16 +15500,16 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_vue_loader_lib_selector_type_script_index_0_streetViewPanorama_vue__ = __webpack_require__(24);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_852126d2_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_streetViewPanorama_vue__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_852126d2_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_streetViewPanorama_vue__ = __webpack_require__(77);
 function injectStyle (ssrContext) {
-  __webpack_require__(73)
+  __webpack_require__(74)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -15478,20 +15538,20 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74);
+var content = __webpack_require__(75);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var update = __webpack_require__(4)("29d3465e", content, true, {});
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(false);
@@ -15505,7 +15565,7 @@ exports.push([module.i, ".vue-street-view-pano-container{position:relative}.vue-
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15674,7 +15734,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15684,7 +15744,7 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15692,7 +15752,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__);
 /* harmony namespace reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return __WEBPACK_IMPORTED_MODULE_0__babel_loader_placeInputImpl_js__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_13bfbbee_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_placeInput_vue__ = __webpack_require__(79);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -15719,7 +15779,7 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15729,14 +15789,14 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_vue_loader_lib_selector_type_script_index_0_autocomplete_vue__ = __webpack_require__(27);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_1c96a2c8_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_autocomplete_vue__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vue_loader_lib_template_compiler_index_id_data_v_1c96a2c8_hasScoped_false_buble_transforms_vue_loader_lib_selector_type_template_index_0_autocomplete_vue__ = __webpack_require__(82);
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -15764,7 +15824,7 @@ var Component = normalizeComponent(
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15862,7 +15922,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15872,14 +15932,14 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return store; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
 
 
@@ -15944,7 +16004,7 @@ var store = new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({
 });
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16888,12 +16948,6 @@ var index_esm = {
 
 
 /***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(85);
-
-/***/ }),
 /* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16901,7 +16955,7 @@ module.exports = __webpack_require__(85);
 
 
 var utils = __webpack_require__(1);
-var bind = __webpack_require__(28);
+var bind = __webpack_require__(29);
 var Axios = __webpack_require__(87);
 var defaults = __webpack_require__(11);
 
@@ -16936,9 +16990,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(32);
+axios.Cancel = __webpack_require__(33);
 axios.CancelToken = __webpack_require__(101);
-axios.isCancel = __webpack_require__(31);
+axios.isCancel = __webpack_require__(32);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -17091,7 +17145,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(30);
+var createError = __webpack_require__(31);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -17524,7 +17578,7 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(1);
 var transformData = __webpack_require__(98);
-var isCancel = __webpack_require__(31);
+var isCancel = __webpack_require__(32);
 var defaults = __webpack_require__(11);
 var isAbsoluteURL = __webpack_require__(99);
 var combineURLs = __webpack_require__(100);
@@ -17684,7 +17738,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(32);
+var Cancel = __webpack_require__(33);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -20425,7 +20479,7 @@ var routes = [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_0__components_Ho
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Activity_vue__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Activity_vue__ = __webpack_require__(34);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_46cb4f9a_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Activity_vue__ = __webpack_require__(108);
 function injectStyle (ssrContext) {
@@ -20499,9 +20553,9 @@ var esExports = { render: render, staticRenderFns: staticRenderFns }
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Report_vue__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Report_vue__ = __webpack_require__(35);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7f6268b5_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Report_vue__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_282915c0_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Report_vue__ = __webpack_require__(112);
 function injectStyle (ssrContext) {
   __webpack_require__(110)
 }
@@ -20516,12 +20570,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-7f6268b5"
+var __vue_scopeId__ = "data-v-282915c0"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Report_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_7f6268b5_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Report_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_282915c0_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Report_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -20542,7 +20596,7 @@ var content = __webpack_require__(111);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("21d55a51", content, true, {});
+var update = __webpack_require__(4)("1ce19c4f", content, true, {});
 
 /***/ }),
 /* 111 */
@@ -20553,7 +20607,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, ".report[data-v-7f6268b5]{height:600px}.reportSelector p[data-v-7f6268b5]{padding:5px 0}.selectorItem[data-v-7f6268b5]{height:30px;width:100%;border:1px solid #ccc;background:#fff;margin-bottom:10px}.previewTable[data-v-7f6268b5]{margin-top:10px;width:125px}.previewArea[data-v-7f6268b5]{border:1px solid #000;width:125px;height:125px;object-fit:cover}", ""]);
+exports.push([module.i, ".report[data-v-282915c0]{height:600px;position:relative}.shadow[data-v-282915c0]{z-index:2;width:100%;height:100%;position:absolute;top:0;left:0;background:rgba(0,0,0,.2);display:none;justify-content:center;align-items:center}.shadow.open[data-v-282915c0]{display:flex}.shadowTable[data-v-282915c0]{border-radius:10px;width:50%;height:50%;background:rgba(0,0,0,.5);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff}.shadowTable p[data-v-282915c0]{margin-bottom:10px;font-size:1rem}.reportSelector p[data-v-282915c0]{padding:5px 0}.selectorItem[data-v-282915c0]{height:30px;width:100%;border:1px solid #ccc;background:#fff;margin-bottom:10px}.previewTable[data-v-282915c0]{margin-top:10px;width:100%;height:100px;position:relative}.previewArea[data-v-282915c0]{width:100px;height:100px;object-fit:cover}.previewTable button[data-v-282915c0]{position:absolute;right:0;bottom:0;border:1px solid #ccc;border-radius:5px;outline:none;background:#fff;padding:5px 15px;color:#666}", ""]);
 
 // exports
 
@@ -20563,8 +20617,8 @@ exports.push([module.i, ".report[data-v-7f6268b5]{height:600px}.reportSelector p
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-fluid report"},[_c('GmapMap',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":_vm.center,"zoom":_vm.zoom,"options":{disableDefaultUI:true}}},[_vm._l((_vm.titleOption),function(item,index){return (_vm.reportLocation==='')?_c('GmapMarker',{key:'m'+item.title,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}}):_vm._l((_vm.selectBeach),function(item,index){return _c('GmapMarker',{key:'l'+item.title,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}})})}),_vm._v(" "),(_vm.displayBeach.beachName !== undefined)?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.displayBeach.geojson[0][1], lng:_vm.displayBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('p',[_vm._v(_vm._s(_vm.displayBeach.title))])]):_vm._e()],2),_vm._v(" "),_c('div',{staticClass:"reportSelector"},[_c('p',[_vm._v("請選擇要通報的海灘")]),_vm._v(" "),_vm._m(0),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.reportBeach),expression:"reportBeach"}],staticClass:"selectorItem",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.reportBeach=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},[_c('option',{attrs:{"selected":"","disabled":""},domProps:{"value":''}},[_vm._v("選擇海灘")]),_vm._v(" "),_c('option',{attrs:{"value":"黃金海岸"}},[_vm._v("黃金海岸")]),_vm._v(" "),_c('option',{attrs:{"value":"漁光島"}},[_vm._v("漁光島")]),_vm._v(" "),_c('option',{attrs:{"value":"觀夕平台"}},[_vm._v("觀夕平台")]),_vm._v(" "),_c('option',{attrs:{"value":"橋頭公園"}},[_vm._v("橋頭公園")]),_vm._v(" "),_c('option',{attrs:{"value":"馬沙溝濱海遊憩區"}},[_vm._v("馬沙溝濱海遊憩區")]),_vm._v(" "),_c('option',{attrs:{"value":"府城天險"}},[_vm._v("府城天險")])]),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.reportLocation),expression:"reportLocation"}],staticClass:"selectorItem",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.reportLocation=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},[_c('option',{attrs:{"selected":"","disabled":""},domProps:{"value":''}},[_vm._v("選擇海灘分段")]),_vm._v(" "),_vm._l((_vm.titleOption),function(item){return _c('option',{key:'option'+item.title,domProps:{"value":item.title}},[_vm._v(_vm._s(item.title))])})],2)]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('div',{staticClass:"controller"},[_c('input',{staticClass:"selectImage",attrs:{"type":"file","accept":"image/*","required":""},on:{"change":_vm.choosePic}})]),_vm._v(" "),_c('div',{staticClass:"previewTable"},[(_vm.image!=='')?_c('img',{staticClass:"previewArea",attrs:{"src":_vm.image}}):_vm._e()])])],1)}
-var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('select',{staticClass:"selectorItem"},[_c('option',[_vm._v("台南市")])])}]
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"container-fluid report"},[_c('div',{staticClass:"shadow",class:{open:_vm.loading}},[_vm._m(0)]),_vm._v(" "),_c('GmapMap',{staticStyle:{"width":"100%","height":"300px"},attrs:{"center":_vm.center,"zoom":_vm.zoom,"options":{disableDefaultUI:true}}},[_vm._l((_vm.titleOption),function(item,index){return (_vm.reportLocation==='')?_c('GmapMarker',{key:'m'+item.title,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}}):_vm._l((_vm.selectBeach),function(item,index){return _c('GmapMarker',{key:'l'+item.title,attrs:{"position":{lat:item.geojson[0][1], lng:item.geojson[0][0]},"clickable":true,"draggable":false,"animation":4,"icon":{url:("./src/assets/GoogleMarkers/yellow_Marker" + (_vm.capital[index]) + ".png")}},on:{"click":function($event){_vm.openInfoWindow(item)}}})})}),_vm._v(" "),(_vm.displayBeach.beachName !== undefined)?_c('gmap-info-window',{attrs:{"options":_vm.infoOptions,"position":{lat:_vm.displayBeach.geojson[0][1], lng:_vm.displayBeach.geojson[0][0]},"opened":_vm.infoWinOpen},on:{"closeclick":function($event){_vm.infoWinOpen=false}}},[_c('p',[_vm._v(_vm._s(_vm.displayBeach.title))])]):_vm._e()],2),_vm._v(" "),_c('div',{staticClass:"reportSelector"},[_c('p',[_vm._v("請選擇要通報的海灘")]),_vm._v(" "),_vm._m(1),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.reportBeach),expression:"reportBeach"}],staticClass:"selectorItem",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.reportBeach=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},[_c('option',{attrs:{"selected":"","disabled":""},domProps:{"value":''}},[_vm._v("選擇海灘")]),_vm._v(" "),_c('option',{attrs:{"value":"黃金海岸"}},[_vm._v("黃金海岸")]),_vm._v(" "),_c('option',{attrs:{"value":"漁光島"}},[_vm._v("漁光島")]),_vm._v(" "),_c('option',{attrs:{"value":"觀夕平台"}},[_vm._v("觀夕平台")]),_vm._v(" "),_c('option',{attrs:{"value":"橋頭公園"}},[_vm._v("橋頭公園")]),_vm._v(" "),_c('option',{attrs:{"value":"馬沙溝濱海遊憩區"}},[_vm._v("馬沙溝濱海遊憩區")]),_vm._v(" "),_c('option',{attrs:{"value":"府城天險"}},[_vm._v("府城天險")])]),_vm._v(" "),_c('select',{directives:[{name:"model",rawName:"v-model",value:(_vm.reportLocation),expression:"reportLocation"}],staticClass:"selectorItem",on:{"change":function($event){var $$selectedVal = Array.prototype.filter.call($event.target.options,function(o){return o.selected}).map(function(o){var val = "_value" in o ? o._value : o.value;return val}); _vm.reportLocation=$event.target.multiple ? $$selectedVal : $$selectedVal[0]}}},[_c('option',{attrs:{"selected":"","disabled":""},domProps:{"value":''}},[_vm._v("選擇海灘分段")]),_vm._v(" "),_vm._l((_vm.titleOption),function(item){return _c('option',{key:'option'+item.title,domProps:{"value":item.title}},[_vm._v(_vm._s(item.title))])})],2)]),_vm._v(" "),_c('div',{staticClass:"form-group"},[_c('div',{staticClass:"controller"},[_c('input',{staticClass:"selectImage",attrs:{"type":"file","accept":"image/*","required":""},on:{"change":_vm.choosePic}})]),_vm._v(" "),_c('div',{staticClass:"previewTable"},[(_vm.image!=='')?_c('img',{staticClass:"previewArea",attrs:{"src":_vm.image}}):_vm._e(),_vm._v(" "),_c('button',{on:{"click":_vm.submitReport}},[_vm._v("送出回報")])])])],1)}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"shadowTable"},[_c('p',[_c('i',{staticClass:"fas fa-spinner fa-pulse fa-5x"})]),_vm._v(" "),_c('p',[_vm._v("上傳中...")])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('select',{staticClass:"selectorItem"},[_c('option',[_vm._v("台南市")])])}]
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
 

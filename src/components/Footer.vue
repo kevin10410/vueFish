@@ -13,6 +13,6 @@ footer {
   margin-top: 30px;
   background-color: #ccc;
   text-align: center;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 </style>
