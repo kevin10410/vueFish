@@ -25,7 +25,6 @@ export default {};
 <style scoped>
 .activity {
   height: 600px;
-  border: 1px solid black;
   position: relative;
 }
 
