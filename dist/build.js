@@ -14167,7 +14167,7 @@ exports.push([module.i, ".displaySelector[data-v-9692c2ce]{padding:12px 0}select
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_GoogleMap_vue__ = __webpack_require__(17);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3f6c03d2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5a5aeb5c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__ = __webpack_require__(47);
 function injectStyle (ssrContext) {
   __webpack_require__(45)
 }
@@ -14182,12 +14182,12 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-3f6c03d2"
+var __vue_scopeId__ = "data-v-5a5aeb5c"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_GoogleMap_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_3f6c03d2_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_5a5aeb5c_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_GoogleMap_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -14208,7 +14208,7 @@ var content = __webpack_require__(46);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("3fec459c", content, true, {});
+var update = __webpack_require__(4)("46ee0d24", content, true, {});
 
 /***/ }),
 /* 46 */
@@ -14219,7 +14219,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, ".googleMapBox[data-v-3f6c03d2]{height:400px;position:relative;overflow:hidden}.sideTable[data-v-3f6c03d2]{width:275px;height:400px;position:absolute;background:#fff;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;top:0;left:100%;transform:translateX(0);padding:0;transition:transform .2s linear}.sideTable.open[data-v-3f6c03d2]{transform:translateX(-100%);transition:transform .2s linear}.switcher[data-v-3f6c03d2]{padding:0 12px;position:absolute;top:-2px;left:-42px;margin:0;border-radius:5px 0 0 5px;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;background:#fff}.allBeachList[data-v-3f6c03d2]{height:400px;padding:0;list-style:none;overflow-y:scroll}.allBeachItem[data-v-3f6c03d2]{height:50px;background:#eee;display:flex}.allBeachItem[data-v-3f6c03d2]:nth-child(2n+2){background:#fff}.icon[data-v-3f6c03d2]{display:flex;width:40px}.icon img[data-v-3f6c03d2]{object-fit:contain;margin:0 auto}.infoDetail[data-v-3f6c03d2]{margin-bottom:2px;font-size:.9rem}.infoDetail span[data-v-3f6c03d2]{display:inline-block;font-weight:700;width:70px}.beachTitle[data-v-3f6c03d2]{margin:0 0 2px;font-size:1.1rem;font-weight:700}.reportPic[data-v-3f6c03d2]{width:100px;height:100px;object-fit:cover}.info[data-v-3f6c03d2]{font-size:.9rem;display:flex;flex-direction:column;justify-content:center}", ""]);
+exports.push([module.i, ".googleMapBox[data-v-5a5aeb5c]{height:550px;position:relative;overflow:hidden}.sideTable[data-v-5a5aeb5c]{width:275px;height:550px;position:absolute;background:#fff;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;top:0;left:100%;transform:translateX(0);padding:0;transition:transform .2s linear}.sideTable.open[data-v-5a5aeb5c]{transform:translateX(-100%);transition:transform .2s linear}.switcher[data-v-5a5aeb5c]{padding:0 12px;position:absolute;top:-2px;left:-42px;margin:0;border-radius:5px 0 0 5px;border-top:2px solid #000;border-bottom:2px solid #000;border-left:2px solid #000;background:#fff}.allBeachList[data-v-5a5aeb5c]{height:400px;padding:0;list-style:none;overflow-y:scroll}.allBeachItem[data-v-5a5aeb5c]{height:50px;background:#eee;display:flex}.allBeachItem[data-v-5a5aeb5c]:nth-child(2n+2){background:#fff}.icon[data-v-5a5aeb5c]{display:flex;width:40px}.icon img[data-v-5a5aeb5c]{object-fit:contain;margin:0 auto}.infoDetail[data-v-5a5aeb5c]{margin-bottom:2px;font-size:.9rem}.infoDetail span[data-v-5a5aeb5c]{display:inline-block;font-weight:700;width:70px}.beachTitle[data-v-5a5aeb5c]{margin:0 0 2px;font-size:1.1rem;font-weight:700}.reportPic[data-v-5a5aeb5c]{width:100px;height:100px;object-fit:cover}.info[data-v-5a5aeb5c]{font-size:.9rem;display:flex;flex-direction:column;justify-content:center}", ""]);
 
 // exports
 

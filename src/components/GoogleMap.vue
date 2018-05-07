@@ -166,14 +166,14 @@ export default {
 </script>
 <style scoped>
 .googleMapBox {
-  height: 400px;
+  height: 550px;
   position: relative;
   overflow: hidden;
 }
 
 .sideTable {
   width: 275px;
-  height: 400px;
+  height: 550px;
   position: absolute;
   background: #ffffff;
   border-top: 2px solid black;
